@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddProductActivity">
+
+    <ScrollView
+        android:id="@+id/svProduk"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rlProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivProduk"
+                android:layout_width="match_parent"
+                android:layout_height="257dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+
+                android:src="@drawable/ic_image_search" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProduk"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="254dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:onClick="chooseImage"
+                android:text="Upload Foto"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/tvNamaProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivProduk"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/nama_produk"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNamaProduct"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNamaProduct"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Isi nama produk" />
+
+            <TextView
+                android:id="@+id/tvHargaProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga Produk"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/etNamaProduct"/>
+
+            <EditText
+                android:id="@+id/etHargaProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvHargaProduct"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:hint="Isi harga produk"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvDeskripsiProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etHargaProduct"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Deskripsi Produk"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDeskripsiProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDeskripsiProduct"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:hint="Isi deskripsi produk"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/tvAlamatProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etDeskripsiProduct"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Lokasi Penjual"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAlamatProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAlamatProduct"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:hint="Isi lokasi"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/tvNoTelpon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAlamatProduct"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="No.Telpon Penjual"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNoTelpon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNoTelpon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Isi nomor telpon"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvStok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etNoTelpon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Stok"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etStok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvStok"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Isi stok barang"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvMinPemesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etStok"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Minimum Pemesanan"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMinPemesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvMinPemesanan"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Isi minimum pemesanan"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvBerat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etMinPemesanan"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Berat (gram)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etBerat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBerat"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:hint="Isi berat barang"
+                android:background="@drawable/edit_text_border"
+                android:padding="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvKategoriProduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etBerat"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Kategori Produk"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvKategoriProduk"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerKategori"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/montserrat"
+                android:onClick="tambahProduct"
+                android:text="Simpan"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBatal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerKategori"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@id/btnSimpan"
+                android:fontFamily="@font/montserrat"
+                android:onClick="batal"
+                android:text="Batal"
+                android:textColorHighlight="#4F5254"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

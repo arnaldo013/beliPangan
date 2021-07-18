@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AdminMainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="314dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="347dp"
+            app:srcCompat="@drawable/img_admin" />
+
+        <Button
+            android:id="@+id/btnVerifAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_admin"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="-336dp"
+            android:layout_marginRight="32dp"
+            android:onClick="verifAdd"
+            android:text="Add Product Request"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnVerifEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:text="Edit Product Request"
+            android:textAllCaps="false"
+            android:layout_below="@id/btnVerifAdd"
+            android:onClick="verifEdit"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

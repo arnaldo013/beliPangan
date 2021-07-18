@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BuyerPendingDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnCancel">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOrderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_marginTop="12sp"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:id="@+id/tvOrderDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order Detail"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvIdOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADBAWJ89779ahjg7687"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvOrderDetail"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvNamaProduk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anggur Hitam"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvIdOrder"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvTotalHargaProduk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Harga"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvNamaProduk"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvHargaProduk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp50.000,00"
+                        android:textColor="@color/green"
+                        android:layout_below="@id/tvNamaProduk"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"/>
+                    <TextView
+                        android:id="@+id/tvJumlahProduk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Barang"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvTotalHargaProduk"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvKuantitasProduk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5 pcs"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvHargaProduk"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvKuantitasProduk"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvStatusProduk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:textColor="@color/orange"
+                        android:layout_below="@id/tvKuantitasProduk"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCustomerDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cvOrderDetail"
+                android:layout_marginTop="12dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:id="@+id/tvCustomerDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Customer Detail"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/tvNamaCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Arief Rahman"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvCustomerDetail"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvAlamatCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jl kaliurang km 14 sleman yogyakarta"
+                        android:textColor="@color/black"
+                        android:layout_below="@id/tvNamaCustomer"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentEnd="true"
+        android:text="Batalkan Pesanan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        android:onClick="cancelAction"/>
+
+</RelativeLayout>

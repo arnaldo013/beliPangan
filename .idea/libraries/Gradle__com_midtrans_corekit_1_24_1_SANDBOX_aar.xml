@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.midtrans:corekit:1.24.1-SANDBOX@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bbdf08d0c99101350eeed776715317bc/jetified-corekit-1.24.1-SANDBOX/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bbdf08d0c99101350eeed776715317bc/jetified-corekit-1.24.1-SANDBOX/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bbdf08d0c99101350eeed776715317bc/jetified-corekit-1.24.1-SANDBOX/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bbdf08d0c99101350eeed776715317bc/jetified-corekit-1.24.1-SANDBOX/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

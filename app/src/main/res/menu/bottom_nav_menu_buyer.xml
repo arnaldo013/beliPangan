@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuHomeBuyer"
+        android:title="Beranda"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/menuOrderBuyer"
+        android:title="Pesanan"
+        android:icon="@drawable/ic_selling"/>
+
+    <item
+        android:id="@+id/menuAkunBuyer"
+        android:title="Akun"
+        android:icon="@drawable/ic_account"/>
+
+</menu>
